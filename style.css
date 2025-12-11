@@ -31,7 +31,7 @@ body {
 .navegacao {
     position: fixed; /*posição fixa*/
     top: 0; /*zerado no topo*/
-    background: var(--color2);
+    background: var(--color4);
     width: 100%; /*largura em todo o top*/
     z-index: 100; /*sempre acima do conteúdo*/
     padding: 2rem;
@@ -68,8 +68,8 @@ li > a:hover {
     max-width: 300px; /*não fica gigante demais*/
     height: auto; /*mantém proporcional*/
     border-radius: 50%; /*a imagem fica redonda*/
-    display: block;
-    margin: 0 5px;
+    display: block; /*torna a foto um bloco, que pode ser manipulado*/
+    margin: 0 0 50px; /*distancia da foto para o texto*/
     box-shadow: 0 0 70px var(--color4);
     animation: flutuar 5s ease-in-out infinite; /*(flutuar) pegou o nome configurado no @keyframes com uma animação suave de 5s infinita*/
 }
@@ -90,18 +90,19 @@ li > a:hover {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
-    padding-top: 200px;
+    margin-top: 200px;
 }
 
 
 strong {
     color: var(--color4);
+    font-size: clamp(3rem, 7vw, 3.5rem);
 }
 
 
 h1 {
     font-size: 5em;
-    margin: 0 20px;
+    font-size: clamp(3rem, 7vw, 3.5rem);
 }
 
 
@@ -121,8 +122,10 @@ h1 {
 
 
 .sobre-mim {
-    margin: 50px auto;
-    max-width: 50%;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    margin: 50px;
     border: 2px solid var(--color2);
     padding: 20px;
     border-radius: 10px;
