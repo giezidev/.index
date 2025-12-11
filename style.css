@@ -27,6 +27,7 @@ body {
 
 /* ========================= MENU ========================= */
 
+
 .navegacao {
     position: fixed; /*posição fixa*/
     top: 0; /*zerado no topo*/
@@ -125,6 +126,7 @@ h1 {
     border: 2px solid var(--color2);
     padding: 20px;
     border-radius: 10px;
+    font-size: 1.5rem;
 }
 
 /* ========================= PROJETOS ========================= */
