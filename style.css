@@ -109,27 +109,33 @@ h1 {
 .p-main {
     font-size: 1.7em;
     color:var(--color5);
+    margin: 30px auto 50px;
 }
 
 /* ========================= SOBRE MIM ========================= */
 
 .titulo-sobre {
-    text-align: center;
+    text-align: start;
+    margin-left: 50px;
     font-size: 2em;
     color: var(--color5);
     margin-top: 50px;
 }
 
+.sobre {
+    margin: 0 30px;
+}
 
 .sobre-mim {
     text-align: center;
     flex: 1;
-    min-width: 200px;
-    margin: 50px;
+    max-width: 65ch;
+    margin: 0 auto;
     border: 2px solid var(--color2);
-    padding: 20px;
+    padding: clamp(1rem, 3vw, 2rem);
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    line-height: 1.5;
 }
 
 /* ========================= PROJETOS ========================= */
@@ -138,7 +144,7 @@ h1 {
 .titulo-projetos {
     text-align: center;
     font-size: 2em;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 
