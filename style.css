@@ -127,14 +127,14 @@ h1 {
 }
 
 .sobre-mim {
-    text-align: center;
-    flex: 1;
-    max-width: 65ch;
-    margin: 0 auto;
+    text-align: center; /*texto ao centro*/
+    flex: 1; /*ocupar todo o espaço disponível, se ajusta e divide o espaço igualmente*/
+    max-width: 65ch; /*tamanho ideal para leitura*/
+    margin: 0 auto; /*cima e baixo 0 laterais automaticas*/
     border: 2px solid var(--color2);
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: clamp(1rem, 3vw, 2rem); /*Nunca vai ser menor que 1rem, cresce ou diminui conforme 3vw, nunca passa de 2rem*/
     border-radius: 10px;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /*nunca fica menos que 1rem, o texte cresce conforme a tela 2.5vw, limita i crescumento 1.5rem*/
     line-height: 1.5;
 }
 
