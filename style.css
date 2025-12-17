@@ -27,14 +27,13 @@ body {
 
 /* ========================= MENU ========================= */
 
-
 .navegacao {
     position: fixed; /*posição fixa*/
     top: 0; /*zerado no topo*/
     background: var(--color4);
     width: 100%; /*largura em todo o top*/
     z-index: 100; /*sempre acima do conteúdo*/
-    padding: 2rem;
+    padding: 40px;
 }
 
 

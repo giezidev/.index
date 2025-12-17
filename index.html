@@ -8,6 +8,7 @@
     <title>GiéziDev</title>
   </head>
   <body>
+
     <nav class="navegacao">
       <!--Menu de navegação-->
       <ul class="menu">
@@ -118,7 +119,7 @@
               <img src="img/github.ico" alt="github" />
             </a>
 
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/feed/" aria-label="LinkedIn" target="_blank">
               <img src="img/linkedin.ico" alt="linkedin" />
             </a>
 
@@ -137,5 +138,15 @@
         <p>&copy; 2025 - GiéziDev. Todos os direitos reservados.</p>
       </footer>
     </section>
+
+    <script>
+      function clickMenu() {
+        if (menu.style.display == 'block')
+        menu.style.display = 'none'
+      } else {
+        menu.style.display = 'block'
+      }
+    </script>
+
   </body>
 </html>
