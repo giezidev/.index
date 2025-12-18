@@ -150,7 +150,7 @@ h1 {
 .pp, .p-projetos {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
 
 }
@@ -170,7 +170,7 @@ h1 {
 
 
 .cards:hover {
-    box-shadow: 0 0 50px var(--color2); /*sombra*/
+    box-shadow: 0 0 70px var(--color2); /*sombra*/
     transform: translateY(-10px) scale(1.03); /*faz o item se deslocar para cima e aumentar de tamanho*/
 }
 
