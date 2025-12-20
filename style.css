@@ -38,7 +38,7 @@ body {
 
 
 .menu {
-    flex-shrink: 0;
+    flex-shrink: 0;   /*define o quento o item pode encolher (:0; não encolhe) */
     display: flex;
     list-style: none;   /*tira a bolinha*/
     gap: 2rem;   /*distancia entre os itens*/
@@ -52,7 +52,17 @@ li a {
     color: var(--color5);
     border: 2px solid var(--color5);
     font-size: clamp(0.85rem, 2.5vw, 1rem);
+    /*
+    mínimo: 0.85rem - nunca fica menor que isso
+    flexível: 2.5vw - cresce/diminui conforme a largura da tela
+    máximo: 1rem - nunca passa disso
+    */
     padding: clamp(6px, 2vw, 12px)
+    /*
+    mínimo: 6px - botão não fica apertado demais
+    flexível: 2vw - acompanha o tamanho da tela
+    máximo: 12px - não fica exagerado
+    */
 }
 
 
