@@ -28,30 +28,31 @@ body {
 /* ========================= MENU ========================= */
 
 .navegacao {
-    position: fixed; /*posição fixa*/
-    top: 0; /*zerado no topo*/
+    position: fixed;   /*posição fixa*/
+    top: 0;   /*zerado no topo*/
     background: var(--color4);
-    width: 100%; /*largura em todo o top*/
-    z-index: 100; /*sempre acima do conteúdo*/
+    width: 100%;   /*largura em todo o top*/
+    z-index: 100;   /*sempre acima do conteúdo*/
     padding: 40px;
 }
 
 
 .menu {
-    flex-flow: row wrap;
+    flex-shrink: 0;
     display: flex;
-    list-style: none; /*tira a bolinha*/
-    gap: 2rem; /*distancia entre os itens*/
-    justify-content: center; /*itens ao centro com espaçamento*/
+    list-style: none;   /*tira a bolinha*/
+    gap: 2rem;   /*distancia entre os itens*/
+    justify-content: center;   /*itens ao centro com espaçamento*/
 }
 
 
 li a {
-    padding: 10px;
     border-radius: 15px;
     text-decoration: none;
     color: var(--color5);
     border: 2px solid var(--color5);
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    padding: clamp(6px, 2vw, 12px)
 }
 
 
@@ -63,22 +64,22 @@ li > a:hover {
 /* ========================= FOTO/INICIO ========================= */
 
 .foto {
-    width: 100%; /*a imagem se adapta ao espaço disponível*/
-    max-width: 300px; /*não fica gigante demais*/
-    height: auto; /*mantém proporcional*/
-    border-radius: 50%; /*a imagem fica redonda*/
-    display: block; /*torna a foto um bloco, que pode ser manipulado*/
-    margin: 0 0 50px; /*distancia da foto para o texto*/
+    width: 100%;   /*a imagem se adapta ao espaço disponível*/
+    max-width: 300px;   /*não fica gigante demais*/
+    height: auto;   /*mantém proporcional*/
+    border-radius: 50%;   /*a imagem fica redonda*/
+    display: block;   /*torna a foto um bloco, que pode ser manipulado*/
+    margin: 0 0 50px;   /*distancia da foto para o texto*/
     box-shadow: 0 0 70px var(--color4);
-    animation: flutuar 5s ease-in-out infinite; /*(flutuar) pegou o nome configurado no @keyframes com uma animação suave de 5s infinita*/
+    animation: flutuar 5s ease-in-out infinite;   /*(flutuar) pegou o nome configurado no @keyframes com uma animação suave de 5s infinita*/
 }
 
 
-@keyframes flutuar { /*isso é uma configuração de animação*/
-    0%, 100% { /*começa e termina no mesmo local*/
+@keyframes flutuar {   /*isso é uma configuração de animação*/
+    0%, 100% {   /*começa e termina no mesmo local*/
         transform: translateY(0);
     }
-    50% { /*na metade ele se desloca -10% para cima (eixo Y)*/
+    50% {   /*na metade ele se desloca -10% para cima (eixo Y)*/
         transform: translateY(-10%);
     }
 }
@@ -110,6 +111,24 @@ h1 {
     color:var(--color5);
     margin: 30px auto 50px;
 }
+
+/* ========================= TECNOLOGIAS ========================= */
+
+.tecnologias {
+    height: 70px; /*altura*/
+    width: auto; /*largura*/
+    margin-bottom: 50px; /*distancia debaixo*/
+    display: flex; /*caixa flexivel*/
+    justify-content: center; /*intens ao centro*/
+    align-items: center; /*alinhar os itens ao centro*/
+    gap: 30px; /*espaço entre os itens*/
+}
+
+.img-tec {
+    height: 70px; /*altura*/
+    border-radius: 20%; /*arredondamento das bordas das imagens*/
+}
+
 
 /* ========================= SOBRE MIM ========================= */
 
